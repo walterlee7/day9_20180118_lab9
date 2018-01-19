@@ -17,6 +17,9 @@ class Shape {
         this.div.addEventListener('click', () => {
             this.describe();
         })
+        this.div.addEventListener('dblclick', () => {
+            this.remove();
+        })
         shapeLocation.appendChild(this.div);
 
     }
@@ -33,10 +36,15 @@ class Shape {
         <br> Width: ${this.x}
         <br> Height: ${this.y}
         <br> Radius: ${this.radius}
-        <br> Area: ${this.area}
-        <br> Perimeter: ${this.perimeter}`;
+        <br> Area: ${this.area} px<sup>2</sup>
+        <br> Perimeter: ${this.perimeter} px`;
         shapeInfo.innerHTML = text;
     }
+
+    remove() {
+        this.div.remove();
+    }
+
 }
 
 class Circle extends Shape {
@@ -49,8 +57,8 @@ class Circle extends Shape {
         this.div.style.borderRadius = `${this.radius}px`;
         this.div.style.backgroundColor = "purple";
         this.div.style.border = "0.5px solid white";
-        this.x = "not applicable"
-        this.y = "not applicable";
+        this.x = radius + " px";
+        this.y = radius + " px";
         let area = Math.PI * this.radius * this.radius;
         this.area = Math.round(100 * area) / 100;
         let perimeter = 2 * Math.PI * this.radius;
@@ -126,7 +134,7 @@ function makeCircle() {
     if (radius > 0 && radius < 601) {
         let circle = new Circle(x, y, radius);
     } else {
-        alert("invalid value");
+        alert("invalid circle value");
     }
 
 }
@@ -143,7 +151,7 @@ function makeTriangle() {
     if (triangleHeight > 0 && triangleHeight < 601) {
         let triangle = new Triangle(x, y, triangleHeight);
     } else {
-        alert("invalid value");
+        alert("invalid triangle value");
     }
 
 }
@@ -152,25 +160,22 @@ let rectangleButton = document.getElementById('rectangleButton');
 rectangleButton.addEventListener('click', makeRectangle);
 
 function makeRectangle() {
-    let getRecHeight = document.getElementById('input-retangleHeight');
-    console.log(getRecHeight);
-    let rectangleHeight = Number(getRecHeight.value);
-    let getRecWidth = document.getElementById('input-retangleWidth');
-    console.log(getRecWidth);
+
+    let getRecWidth = document.getElementById('inputRecWidth');
     let rectangleWidth = Number(getRecWidth.value);
-    let x = randomVal(rectangleWidth, xMAX);
+    let adjRecWidth = 2 * rectangleWidth;
+
+    let getRecHeight = document.getElementById('inputRecHeight');
+    let rectangleHeight = Number(getRecHeight.value);
+
+    let x = randomVal(adjRecWidth, xMAX);
     let y = randomVal(rectangleHeight, yMAX);
 
-    if (rectangleHeight > 0 && rectangleHeight < 601) {
-        let rectangle = new Rectangle(x, y, rectangleHeight);
+    if (rectangleHeight > 0 && rectangleHeight < 601 &&
+        rectangleWidth > 0 && rectangleWidth < 601) {
+        let rectangle = new Rectangle(x, y, rectangleWidth, rectangleHeight);
     } else {
-        alert("invalid value");
-    }
-
-    if (rectangleWidth > 0 && rectangleWidth < 601) {
-        let rectangle = new Rectangle(x, y, rectangleWidth);
-    } else {
-        alert("invalid value");
+        alert("invalid rectangle value");
     }
 }
 
@@ -186,7 +191,7 @@ function makeSquare() {
     if (sideLength > 0 && sideLength < 601) {
         let square = new Square(x, y, sideLength);
     } else {
-        alert("invalid value");
+        alert("invalid square value");
     }
 }
 
