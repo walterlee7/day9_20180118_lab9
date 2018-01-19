@@ -1,0 +1,71 @@
+.inputbox {
+    background-color: lightgreen;
+    width: 800px;
+    height: 156.38px;
+    display: flex;
+    margin: 0.25em;
+}
+
+.inputboxleft {
+    width: 400px;
+    height: 150px;
+    border: 0.05em solid black;
+    padding: 0.1em;
+}
+
+.inputboxright {
+    width: 400px;
+    height: 150px;
+    border: 0.05em solid black;
+    padding: 0.1em;
+}
+
+
+#rectangleButton {
+    margin: 0.5em;
+}
+
+#triangleButton {
+    margin: 0.5em;
+}
+
+#circleButton {
+    margin: 0.5em;
+}
+
+#squareButton {
+    margin: 0.5em;
+}
+
+.shapebox {
+    
+    width: 800px;
+    height: 600px;
+    display: flex;
+    margin: 0.25em;
+    position: absolute;
+}
+
+#shapeid {
+    position: absolute;
+}
+
+.shape-info {
+    background-color: lightblue;
+    width: 200px;
+    height: 600px;
+    border: 0.05em solid black;
+    display: block;
+    
+    
+} 
+
+.location {
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    border: 0.05em solid black;
+    position: relative;
+    
+}
+
