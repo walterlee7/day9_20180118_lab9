@@ -8,14 +8,12 @@
 .inputbox {
     background-color: lightgreen;
     width: 800px;
-    height: 156.38px;
     display: flex;
     margin: 0.25em;
 }
 
 .inputboxleft {
     width: 400px;
-    height: 150px;
     border: 0.05em solid black;
     padding: 0.1em;
     font: bold 14px arial, serif;
@@ -27,7 +25,6 @@
 
 .inputboxright {
     width: 400px;
-    height: 150px;
     border: 0.05em solid black;
     padding: 0.1em;
     font: bold 14px arial, serif;
@@ -72,14 +69,15 @@
 .shape-info {
     background-color: lightblue;
     width: 200px;
-    height: 600px;
+    /* height: 600px; */
     border: 0.05em solid black;
     display: block;
     padding: 0.2em;
+    margin: 0;
 }
 
 .shape-title {
-    padding: 0.2em;
+    padding: 0;
     margin: 0;
 }
 
@@ -91,7 +89,7 @@
 .location {
     background-color: white;
     width: 600px;
-    height: 600px;
+    /* height: 600px; */
     border: 0.05em solid black;
     position: relative;
 }
