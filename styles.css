@@ -1,3 +1,10 @@
+.header {
+    padding: 0.4em;
+    background-color: silver;
+    width: 800px;
+    text-align: center;
+}
+
 .inputbox {
     background-color: lightgreen;
     width: 800px;
@@ -30,7 +37,6 @@
     border-bottom: 0.05em solid black;
 }
 
-
 #rectangleButton {
     margin: 0.5em;
 }
@@ -48,7 +54,6 @@
 }
 
 .shapebox {
-    
     width: 800px;
     height: 600px;
     display: flex;
@@ -57,9 +62,7 @@
 }
 
 .shape {
-
     cursor: pointer;
-
 }
 
 #shapeid {
@@ -72,9 +75,18 @@
     height: 600px;
     border: 0.05em solid black;
     display: block;
-    
-    
-} 
+    padding: 0.2em;
+}
+
+.shape-title {
+    padding: 0.2em;
+    margin: 0;
+}
+
+.location-title {
+    padding: 0.2em;
+    margin: 0;
+}
 
 .location {
     background-color: white;
@@ -82,6 +94,5 @@
     height: 600px;
     border: 0.05em solid black;
     position: relative;
-    
 }
 

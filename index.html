@@ -10,17 +10,22 @@
 </head>
 
 <body>
+    <div class="header">
+        <h1>Shape Generator</h1>
+    </div>
     <div class="inputbox">
         <div class="inputboxleft">
             <div class="circlebox">
                 Circle Radius:
                 <input type="value" id="input-radius" value="">
+                px
                 <br>
                 <button id="circleButton">Insert Circle</button>
             </div>
             <div>
                 Triangle Height:
                 <input type="value" id="input-triangleHeight" value="">
+                px
                 <br>
                 <button id="triangleButton">Insert Right Isoceles Triangle</button>
             </div>
@@ -30,29 +35,31 @@
             <div class="rectanglebox">
                 Rectangle Width:
                 <input type="value" id="inputRecWidth" value="">
+                px
                 <br> Rectangle Height:
                 <input type="value" id="inputRecHeight" value="">
+                px
                 <br>
                 <button id="rectangleButton">Insert Rectangle</button>
             </div>
             <div>
                 Square Side Length:
                 <input type="value" id="input-sideLength" value="">
+                px
                 <br>
                 <button id="squareButton">Insert Square</button>
             </div>
         </div>
-
     </div>
 
     <div class="shapebox">
         <div class="shape-info">
-            <h4>Shape Info:</h4>
+            <h4 class="shape-title">Shape Info:</h4>
             <br>
             <span id="shape-info"></span>
         </div>
-        <div class="location" id="shape-location">
-            <h4>Shape Location:</h4>
+        <div id="shape-location" class="location">
+            <h4 class="location-title">Shape Location:</h4>
         </div>
     </div>
 
