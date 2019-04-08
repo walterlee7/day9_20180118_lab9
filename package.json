@@ -1,0 +1,23 @@
+{
+    "name": "day9_20180118_lab9",
+    "version": "1.0.0",
+    "description": "day 9 (01-18-18), lab 9, working with shapes with object oriented programming",
+    "main": "script.js",
+    "scripts": {
+        "deploy": "gh-pages -d build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/walterlee7/day9_20180118_lab9.git"
+    },
+    "keywords": [],
+    "author": "Walter Lee",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/walterlee7/day9_20180118_lab9/issues"
+    },
+    "homepage": "https://walterlee7.github.io/day9_20180118_lab9",
+    "devDependencies": {
+        "gh-pages": "^2.0.1"
+    }
+}
