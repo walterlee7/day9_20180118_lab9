@@ -36,18 +36,26 @@
 
 #rectangleButton {
     margin: 0.5em;
+    border: 2px solid black;
+    border-radius: 25px;
 }
 
 #triangleButton {
     margin: 0.5em;
+    border: 2px solid black;
+    border-radius: 25px;
 }
 
 #circleButton {
     margin: 0.5em;
+    border: 2px solid black;
+    border-radius: 25px;
 }
 
 #squareButton {
     margin: 0.5em;
+    border: 2px solid black;
+    border-radius: 25px;
 }
 
 .shapebox {
@@ -66,10 +74,15 @@
     position: absolute;
 }
 
+#shape-info {
+    background-color: rgb(202, 241, 176);
+    border-radius: 25px;
+    padding: 0.1em;
+}
+
 .shape-info {
     background-color: lightblue;
     width: 200px;
-    /* height: 600px; */
     border: 0.05em solid black;
     display: block;
     padding: 0.2em;
@@ -89,7 +102,6 @@
 .location {
     background-color: white;
     width: 600px;
-    /* height: 600px; */
     border: 0.05em solid black;
     position: relative;
 }
