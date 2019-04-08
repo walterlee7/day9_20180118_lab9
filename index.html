@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Working with Shapes in OOP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>JavaScript Shape Generator</h1>
+    </div>
+    <div class="inputbox">
+        <div class="inputboxleft">
+            <div class="circlebox">
+                Circle Radius:
+                <input type="value" id="input-radius" value="">
+                px
+                <br>
+                <button id="circleButton">Insert Circle</button>
+            </div>
+            <div>
+                Triangle Height:
+                <input type="value" id="input-triangleHeight" value="">
+                px
+                <br>
+                <button id="triangleButton">Insert Right Isoceles Triangle</button>
+            </div>
+
+        </div>
+        <div class="inputboxright">
+            <div class="rectanglebox">
+                Rectangle Width:
+                <input type="value" id="inputRecWidth" value="">
+                px
+                <br> Rectangle Height:
+                <input type="value" id="inputRecHeight" value="">
+                px
+                <br>
+                <button id="rectangleButton">Insert Rectangle</button>
+            </div>
+            <div>
+                Square Side Length:
+                <input type="value" id="input-sideLength" value="">
+                px
+                <br>
+                <button id="squareButton">Insert Square</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="shapebox">
+        <div class="shape-info">
+            <h4 class="shape-title">Click Shape For Info:</h4>
+            <br>
+            <span id="shape-info"></span>
+        </div>
+        <div id="shape-location" class="location">
+            <h4 class="location-title">Shapes Appear Here:</h4>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
